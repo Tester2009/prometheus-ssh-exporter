@@ -43,7 +43,7 @@ class Session:
         return self.login == other.login and self.tty == other.tty and self.from_ == other.from_
 
 
-def get_utmp_data() -> list[Session]:
+def get_utmp_data() -> Session:
     """
     Returns a list of User Objects
     The function uses the utmp library. The utmp file contains information about ALL currently logged in users,
